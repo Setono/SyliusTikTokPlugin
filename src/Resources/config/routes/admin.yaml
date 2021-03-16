@@ -9,5 +9,5 @@ setono_sylius_tiktok_admin_pixel:
             all:
                 subheader: setono_sylius_tiktok.ui.manage_pixels
             index:
-                icon: 'tiktok'
+                icon: 'video'
     type: sylius.resource

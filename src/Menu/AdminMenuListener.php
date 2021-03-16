@@ -29,6 +29,6 @@ final class AdminMenuListener
                 'route' => 'setono_sylius_tiktok_admin_pixel_index',
             ])
             ->setLabel('setono_sylius_tiktok.ui.tiktok')
-            ->setLabelAttribute('icon', 'tiktok');
+            ->setLabelAttribute('icon', 'video');
     }
 }

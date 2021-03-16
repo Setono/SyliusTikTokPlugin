@@ -16,7 +16,7 @@
         "setono/tag-bag": "^1.4",
         "setono/tag-bag-bundle": "^2.0",
         "setono/tag-bag-twig": "^1.0",
-        "spatie/data-transfer-object": "^2.8",
+        "spatie/data-transfer-object": "^1.13 || ^2.8",
         "sylius/resource-bundle": "^1.6",
         "symfony/config": "^4.4 || ^5.0",
         "symfony/dependency-injection": "^4.4 || ^5.0",

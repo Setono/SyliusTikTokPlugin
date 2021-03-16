@@ -1,0 +1,2 @@
+setono_sylius_tiktok:
+    resource: "@SetonoSyliusTikTokPlugin/Resources/config/routes.yaml"

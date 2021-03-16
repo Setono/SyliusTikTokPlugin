@@ -1,0 +1,12 @@
+setono_sylius_tiktok:
+    form:
+        pixel:
+            pixel_id: Pixel id
+            pixel_id_placeholder: Insert your pixel id...
+    ui:
+        edit_pixel: Edit TikTok pixel
+        tiktok: TikTok
+        manage_pixels: Manage TikTok pixels
+        new_pixel: New TikTok pixel
+        pixel_id: Pixel id
+        pixels: TikTok pixels

@@ -1,0 +1,7 @@
+<script>
+{%- if parameters is defined -%}
+    ttq.track('{{ event }}', {{ parameters|raw }});
+{%- else -%}
+    ttq.track('{{ event }}');
+{%- endif -%}
+</script>

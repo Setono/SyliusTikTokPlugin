@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@SetonoSyliusTikTokPlugin/Resources/config/app/config.yaml" }

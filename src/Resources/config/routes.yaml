@@ -1,0 +1,3 @@
+setono_sylius_tiktok_admin:
+    resource: "@SetonoSyliusTikTokPlugin/Resources/config/routes/admin.yaml"
+    prefix: /admin/tiktok

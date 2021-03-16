@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="setono_sylius_tiktok.event_listener.add_library"
+                 class="Setono\SyliusTikTokPlugin\EventListener\AddLibrarySubscriber">
+            <argument type="service" id="setono_tag_bag.tag_bag"/>
+            <argument type="service" id="setono_sylius_tiktok.context.pixel"/>
+            <argument type="service" id="event_dispatcher"/>
+            <argument type="service" id="request_stack"/>
+            <argument type="service" id="security.firewall.map"/>
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="setono_sylius_tiktok.event_listener.add_to_cart"
+                 class="Setono\SyliusTikTokPlugin\EventListener\AddToCartSubscriber">
+            <argument type="service" id="setono_tag_bag.tag_bag"/>
+            <argument type="service" id="setono_sylius_tiktok.context.pixel"/>
+            <argument type="service" id="event_dispatcher"/>
+            <argument type="service" id="sylius.context.cart.composite"/>
+            <argument type="service" id="request_stack"/>
+            <argument type="service" id="security.firewall.map"/>
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="setono_sylius_tiktok.event_listener.purchase"
+                 class="Setono\SyliusTikTokPlugin\EventListener\PurchaseSubscriber">
+            <argument type="service" id="setono_tag_bag.tag_bag"/>
+            <argument type="service" id="setono_sylius_tiktok.context.pixel"/>
+            <argument type="service" id="event_dispatcher"/>
+            <argument type="service" id="request_stack"/>
+            <argument type="service" id="security.firewall.map"/>
+            <argument type="service" id="sylius.repository.order"/>
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="setono_sylius_tiktok.event_listener.view_content"
+                 class="Setono\SyliusTikTokPlugin\EventListener\ViewContentSubscriber">
+            <argument type="service" id="setono_tag_bag.tag_bag"/>
+            <argument type="service" id="setono_sylius_tiktok.context.pixel"/>
+            <argument type="service" id="event_dispatcher"/>
+            <argument type="service" id="request_stack"/>
+            <argument type="service" id="security.firewall.map"/>
+            <tag name="kernel.event_subscriber"/>
+        </service>
+    </services>
+</container>
+

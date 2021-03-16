@@ -1,0 +1,13 @@
+setono_sylius_tiktok_admin_pixel:
+    resource: |
+        section: admin
+        alias: setono_sylius_tiktok.pixel
+        templates: "@SyliusAdmin/Crud"
+        redirect: update
+        grid: setono_sylius_tiktok_admin_pixel
+        vars:
+            all:
+                subheader: setono_sylius_tiktok.ui.manage_pixels
+            index:
+                icon: 'tiktok'
+    type: sylius.resource
